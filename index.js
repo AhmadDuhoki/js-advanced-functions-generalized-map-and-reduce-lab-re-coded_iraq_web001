@@ -1,7 +1,7 @@
 function map(sourceArr, callback){
   let newArr = [];
   for (let i = 0; i < sourceArr.length; i++) {
-    newArr.push(callback(arr[i]));
+    newArr.push(callback(sourceArr[i]));
   }
   return newArr;
 }
