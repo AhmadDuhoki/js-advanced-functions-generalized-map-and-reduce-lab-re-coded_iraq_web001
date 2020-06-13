@@ -7,5 +7,9 @@ function map(sourceArr, callback){
 }
 
 function reduce(sourceArr, callback, startingValue){
-  
+  let memo = startingPoint ? startingPoint : arr[0]
+  for (let i = startingPoint ? 0 : 1; i < arr.length; i++) {
+    newValue = callbackFn(arr[i], newValue)
+  }
+  return newValue
 }
