@@ -6,6 +6,6 @@ function map(sourceArr, callback){
   return newArr;
 }
 
-function reduce(sourceArr, startingValue, ){
+function reduce(sourceArr, callback, startingValue){
   
 }
