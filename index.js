@@ -7,8 +7,8 @@ function map(sourceArr, callback){
 }
 
 function reduce(sourceArr, callback, startingValue){
-  let memo = startingPoint ? startingPoint : sourceArr[0];
-  for (let i = startingPoint ? 0 : 1; i < sourceArr.length; i++) {
+  let memo = startingValue ? startingValue : sourceArr[0];
+  for (let i = startingValue ? 0 : 1; i < sourceArr.length; i++) {
     memo = callbackFn(sourceArr[i], memo);
   }
   return memo;
